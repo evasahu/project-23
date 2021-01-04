@@ -1,8 +1,7 @@
-class Ground{
+class Box{
     constructor(x,y,width,height){
         var option = {
-            isStatic: true
-
+            restitution: 0.8
         }
         this.body = Bodies.rectangle(x,y,width,height,option);
         this.width = width;
@@ -12,7 +11,7 @@ class Ground{
     display(){
         var pos = this.body.position;
         rectMode(CENTER);
-        fill("pink");
+        fill("red");
         rect(pos.x,pos.y,this.width,this.height);
 
     }
