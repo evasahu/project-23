@@ -76,6 +76,7 @@ function draw() {
 
   
   drawSprites();
+}
 
   function keyPressed(){
 if(keyCode === LEFT_ARROW){
@@ -91,7 +92,7 @@ Matter.Body.translate(packageBody , translation);
 }
 
 else if(keyCode === DOWN_ARROW){
-Matter.Body.setStatic(package , false);
+Matter.Body.setStatic(packageBody , false);
 }
 
 
@@ -100,4 +101,4 @@ Matter.Body.setStatic(package , false);
   
   
  
-}
+
